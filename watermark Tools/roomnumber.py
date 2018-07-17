@@ -28,7 +28,7 @@ def draw(text, toFile):
     draw = ImageDraw.Draw(image)
 
     fontSize = 120 #字号大小
-    font = ImageFont.truetype("/System/Library/Fonts/SFCompactDisplay-Heavy.otf", fontSize)
+    font = ImageFont.truetype("/Users/luwei/Library/Fonts/方正大黑简体.ttf", fontSize)
     w, h = font.getsize(text)
     draw.text(((width-w)/2, (height-h-36)/2), text, (0,0,0), font)
     image.save(toFile)
