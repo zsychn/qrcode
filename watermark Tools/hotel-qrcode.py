@@ -14,7 +14,7 @@ def downLoadPto(csvDir, fileDir):
         for row in rows:
             row =  row.replace("\n", '')
             host =  """ "http://qr.liantu.com/api.php?&w=200&text="""
-            url =  """ https://app.mrrac.com/xiaochengxu?id="""+row+"""&from=bucket"""
+            url =  """https://app.mrrac.com/xiaochengxu?id="""+row+"""&from=bucket"""
             com = 'wget '+ host + urllib.pathname2url(url) +'" -O '+fileDir+'/'+row+".png"
             print com + ""
             os.popen(com)
